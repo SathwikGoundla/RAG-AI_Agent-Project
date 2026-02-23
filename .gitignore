@@ -1,0 +1,25 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js
+/.next/
+/out/
+
+# Production build
+/build
+
+# Environment variables (IMPORTANT: Never commit this!)
+.env.local
+.env.*.local
+
+# Data directory (SQLite DB + uploaded files)
+/data/
+
+# Misc
+.DS_Store
+*.pem
+.vercel
+*.tsbuildinfo
+next-env.d.ts

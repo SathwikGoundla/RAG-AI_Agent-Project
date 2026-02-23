@@ -181,7 +181,7 @@ export default function ChatPage() {
               );
             }
             if (parsed.done && parsed.sources) {
-              sources = [...new Set(parsed.sources)];
+              sources = [...new Set(parsed.sources as string[])];
               setMessages(prev =>
                 prev.map(m => m.id === assistantId ? { ...m, sources } : m)
               );
